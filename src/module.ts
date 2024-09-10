@@ -47,12 +47,6 @@ interface VercelAnanalyticsOptions {
   beforeSend?: AnalyticsProps["beforeSend"];
 }
 
-declare module "nuxt/schema" {
-  interface CustomAppConfig {
-    vercelAnalytics?: VercelAnanalyticsOptions;
-  }
-}
-
 declare module "@nuxt/schema" {
   interface CustomAppConfig {
     vercelAnalytics?: VercelAnanalyticsOptions;
